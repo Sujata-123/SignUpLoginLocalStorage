@@ -1,0 +1,68 @@
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <script src="script.js"></script>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<!-- <body>
+  <div>
+    <h1 id="signupform">Signup Form</h1>
+    <div class="text-decoration1">
+      Enter Name:
+      <input type="text" class="form-control" name="" id="name"></br></br>
+      Enter Age:
+      <input type="text" class="form-control" name=""
+      id="age"></br></br>
+      Enter Email
+      <input type="text" class="form-control" name=""
+      id="email"></br></br>
+      Enter Pass
+      <input type="password" class="form-control" name=""
+      id="pass"></br></br>
+    </div>
+  </div>
+  <button type="button" onclick="signUp()" id="signup1">Signup</button>
+</body> -->
+<body>
+  <div>
+
+    <div>
+
+      <h1>Login</h1>
+      Enter Email:
+      <input type="text" name="" id="email"/>
+      Enter Pass:
+      <input type="text" name="" id="pass"/>
+      <button type="button" onclick="login()">Login</button>
+    </div>
+  </div>
+
+  <script> 
+    function login() {
+      // window.location = 'home.html';
+      console.log('Inside Login');
+      let email = document.getElementById('email').value;
+      let pass = document.getElementById('pass').value;
+    
+      // let email_local = localStorage.getItem('email');
+      // alert(email_local)
+      // let pass_local = localStorage.getItem('pass');
+      // alert(pass_local)
+      logindetail = {
+        email:email,
+        pass:pass
+      }
+      localStorage.getItem('logindetl',JSON.parse(logindetail))
+      if (email === email_local && pass === pass_local) {
+        window.location = 'home.html';
+      } else {
+        alert('Email and pass is incorrect');
+      }
+    }
+     </script>
+</body>
+
+
+</html>

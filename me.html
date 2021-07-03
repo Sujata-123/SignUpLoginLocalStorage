@@ -1,0 +1,38 @@
+<html>
+
+<head>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+  <div>
+
+    <div>
+
+      <h1>Login</h1>
+      Enter Email:
+      <input type="text" name="" id="email">
+      Enter Pass:
+      <input type="text" name="" id="pass">
+      <button type="button" onclick="login()">Login</button>
+    </div>
+  </div>
+
+  <script>
+    function login(){
+    let  document.getElementById("email").value;
+    let document.getElementById("pass").value;
+
+    let email=localStorage.getItem("email");
+    let pass=localStorage.getItem("pass");
+    if(email===email && pass===pass){
+      window.location.href="home.html";
+    }
+    else{
+      alert('Email and pass is incorrect');
+    }
+     }
+  </script>
+</body>
+
+</html>

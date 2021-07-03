@@ -1,0 +1,25 @@
+body {
+  background: lightseagreen;
+  text-align: center;
+  margin: 100px;
+  padding: 20px;
+}
+#signup1 {
+  background-color: rgb(95, 136, 172);
+  color: black;
+  border-radius: 50px;
+  font-size: 30px;
+  text-shadow: 2px 2px #ff0000;
+}
+.form-control {
+  font-size: 20px;
+}
+.text-decoration1 {
+  font-size: 20;
+  font-weight: bold;
+  text-shadow: 0 0 8px coral;
+  filter: blur(0.22px);
+}
+#signupform {
+  text-shadow: 2px 2px #ff0000;
+}
